@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
+  reactStrictMode: false,
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
+};
 
 export default nextConfig;
